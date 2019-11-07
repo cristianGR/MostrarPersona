@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MostrarPersona.MainPage">
+
+    <StackLayout x:Name="PanelPersona">
+        <Label x:Name="LblNombre" Text="{Binding Nombre}"></Label>
+        <Label x:Name="LblPaís" Text="{Binding País}"></Label>
+        <StackLayout BackgroundColor="Red" x:Name="PanelMascota">
+            <Label x:Name="LblTipoMascota" Text="{Binding Tipo}" TextColor="White"></Label>
+            <Label x:Name="LblNombreMascota" Text="{Binding Nombre}" TextColor="White"></Label>
+        </StackLayout>
+        <Button x:Name="BtnCambiarPersona" Text="Próximo" Clicked="CambiarPersona"></Button>
+    </StackLayout>
+
+</ContentPage>
